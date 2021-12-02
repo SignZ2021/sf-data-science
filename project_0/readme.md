@@ -1,11 +1,16 @@
 # Проект 0. Угадай число
 
 ## Оглавление
-[1. Описание проекта](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Описание-проекта) 
-[2. Какой кейс решаем?](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Какой-кейс-решаем) 
+[1. Описание проекта](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Описание-проекта)
+
+[2. Какой кейс решаем?](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Какой-кейс-решаем)
+
 [3. Краткая информация о данных](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Краткая-информация-о-данных)
-[4. Этпаы работы над проектом](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Этпаы-работы-над-проектом)
+
+[4. Этапы работы над проектом](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Этапы-работы-над-проектом)
+
 [5. Результат](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Результат)
+
 [6. Выводы](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Выводы)
 
 ### Описание проекта
@@ -25,7 +30,7 @@
 Результаты оцениваются по среднему количеству попыток при 1000 повторений.
 
 **Что практикуем**
-Учимся писать хороший код на Python.*
+Учимся писать хороший код на Python.
 
 
 ### Краткая информация о данных
@@ -34,7 +39,7 @@
 :arrow_up:[к оглавлению](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Оглавление)
 
 
-### Этапы работ над проектом
+### Этапы работы над проектом
 ....
 
 :arrow_up:[к оглавлению](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Оглавление)
