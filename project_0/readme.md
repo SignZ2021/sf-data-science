@@ -45,7 +45,7 @@
 :arrow_up:[к оглавлению](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Оглавление)
 
 
-### Результаты
+### Результат
 ....
 
 :arrow_up:[к оглавлению](https://github.com/SignZ2021/sf-data-science/tree/main/project_0/readme.md#Оглавление)
