@@ -13,7 +13,7 @@ def dichotomy_predict(number:int=1) -> int:
     Returns:
         int: Число попыток
     """
-    
+      
     count = 0   # счетчик попыток
     prdict_number_min = 0  # нижняя граница поиска числа
     prdict_number_max = 101  # верхняя граница поиска числа
@@ -47,8 +47,7 @@ def score_game(dichotomy_predict) -> int:
     
     for number in random_array:
         count_ls.append(dichotomy_predict(number)) 
-    
-        
+       
     score = int(np.mean(count_ls))
     print(f'Ваш алгоритм угадывает число в среднем за:{score} попыток')
     return(score)
