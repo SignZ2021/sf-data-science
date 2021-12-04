@@ -17,10 +17,11 @@ def random_predict(number:int=1) -> int:
     count = 0
     
     while True:
-        count+=1
+        count += 1
         prdict_number = np.random.randint(1,101) # предполагаемое число
         if number == prdict_number:
             break # выход из цикла если угадали
+        
     return(count)
 
 
@@ -34,7 +35,7 @@ def score_game(random_predict) -> int:
         int: среднее количество
     """
     count_ls = []
-    np.random.seed(1) # фиксируем сид для воспроизводимости
+    #np.random.seed(1) # фиксируем сид для воспроизводимости
     random_array = np.random.randint(1, 101, size=(1000)) # загадали список чисел
     
     for number in random_array:

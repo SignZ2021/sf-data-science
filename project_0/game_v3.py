@@ -1,11 +1,12 @@
 """Игра угадай число
-Компьютер сам загадывет и сам отгадывает число методом половинного деления
+Компьютер сам загадывет и сам отгадывает число (с коррекцией)
 """
 
 import numpy as np
 
-def dichotomy_predict(number:int=1) -> int:
-    """Угадываем число методом половинного деления
+def random_predict(number:int=1) -> int:
+    """Сначала рандомно устанавливаем число, а потом уменьшаем или увеличиваем его
+        в зависимости от того, больше оно или меньше нужного.
 
     Args:
         number (int, optional): Загаданное число. Defaults to 1.
@@ -14,30 +15,25 @@ def dichotomy_predict(number:int=1) -> int:
         int: Число попыток
     """
     
-    count = 0   # счетчик попыток
-    prdict_number_min = 0  # нижняя граница поиска числа
-    prdict_number_max = 101  # верхняя граница поиска числа
+    count = 0
+    prdict_number = np.random.randint(1, 101) # первое произвольное число
     
-    while True:
+    while number != prdict_number:
         count += 1
-        
-        prdict_number = (prdict_number_max + prdict_number_min)//2
 
         if number > prdict_number:
-            prdict_number_min = prdict_number  # смещение нижней границы поиска числа
+            prdict_number += 1
         elif number < prdict_number:
-            prdict_number_max = prdict_number  # смещение верхней границы поиска числа               
-        else:
-            break # выход из цикла если угадали
+            prdict_number -= 1
         
     return(count)
 
 
-def score_game(dichotomy_predict) -> int:
+def score_game(random_predict) -> int:
     """За какое количество попыток в среднем за 1000 подходов угадывает наш алгоритм
 
     Args:
-        predict_function ([type]): фнуция угадывания
+        random_predict ([type]): фнуция угадывания
 
     Returns:
         int: среднее количество
@@ -47,8 +43,7 @@ def score_game(dichotomy_predict) -> int:
     random_array = np.random.randint(1, 101, size=(1000)) # загадали список чисел
     
     for number in random_array:
-        count_ls.append(dichotomy_predict(number)) 
-    
+        count_ls.append(random_predict(number)) 
         
     score = int(np.mean(count_ls))
     print(f'Ваш алгоритм угадывает число в среднем за:{score} попыток')
@@ -56,4 +51,4 @@ def score_game(dichotomy_predict) -> int:
 
 if __name__ == '__main__':
     # RUN
-    score_game(dichotomy_predict)
+    score_game(random_predict)
