@@ -20,14 +20,12 @@ def dichotomy_predict(number:int=1) -> int:
     
     while True:
         count += 1
-        prdict_number = (prdict_number_max + prdict_number_min)//2
+        prdict_number = (prdict_number_max + prdict_number_min) // 2
 
         if number > prdict_number:
-            prdict_number_min = prdict_number  # смещение нижней границы поиска числа
-            
+            prdict_number_min = prdict_number  # смещение нижней границы поиска числа       
         elif number < prdict_number:
             prdict_number_max = prdict_number  # смещение верхней границы поиска числа  
-                         
         else:
             break # выход из цикла если угадали
         
